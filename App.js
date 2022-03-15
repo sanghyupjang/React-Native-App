@@ -68,7 +68,7 @@ s !== null ? setToDos(JSON.parse(s)) : null;
       <View style={styles.header}>
         <TouchableOpacity onPress={work}>
           <Text
-            style={{ ...styles.btnText, color: working ? "white" : theme.grey }}
+            style={{ ...styles.btnText, color: working ? "white" : theme.gray }}
           >
             Work
           </Text>
