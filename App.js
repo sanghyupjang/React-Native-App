@@ -56,6 +56,7 @@ s !== null ? setToDos(JSON.parse(s)) : null;
         onPress: () => {
           const newToDos = { ...toDos };
           delete newToDos[key];
+          newToDos[key] = {completed:true}
           setToDos(newToDos);
           saveToDos(newToDos);
         },
